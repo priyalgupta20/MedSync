@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Map Embed</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar input {
+    width: 250px;
+    padding: 5px;
+}
+
+#map {
+    height: 90vh;
+    width: 100%;
+    margin-top: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Google Map Embed</h1>
+        <iframe 
+            id="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1860282275227!2d-122.3996406846818!3d37.79145657975654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858085f7c79ab3%3A0x47692c56ff78c1eb!2sSalesforce%20Tower!5e0!3m2!1sen!2sus!4v1637714097035!5m2!1sen!2sus"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+    console.log('Document loaded and ready.');
+});
+        </script>
+    </div>
+</body>
+</html>
